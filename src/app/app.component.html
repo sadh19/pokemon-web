@@ -1,12 +1,22 @@
-<div>
-
-  Soy el home
-
-  <div>
-    <app-pokemon-list></app-pokemon-list>
-  </div>
-
-</div>
-
+<nav>
+  <ul>
+    <li>
+      <a
+        routerLink="/login"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Login</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/pokemon-list"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Second Component</a
+      >
+    </li>
+  </ul>
+</nav>
 
 <router-outlet />

@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { PokemonListComponent } from './pages/pokemon-list/pokemon-list.component';
-import { CommonModule } from '@angular/common';
-
+import { Component } from "@angular/core";
+import { RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
+import { PokemonListComponent } from "./pages/pokemon-list/pokemon-list.component";
+import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, PokemonListComponent, CommonModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    PokemonListComponent,
+    CommonModule,
+  ],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.css",
 })
 export class AppComponent {
-  title = 'pokemon-web';
+  title = "pokemon-web";
 }
